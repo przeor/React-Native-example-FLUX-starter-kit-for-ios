@@ -6,6 +6,10 @@
     "start": "node_modules/react-native/packager/packager.sh"
   },
   "dependencies": {
-    "react-native": "^0.3.1"
+    "es6-promise": "^2.0.1",
+    "events": "^1.0.2",
+    "react": "^0.12.2",
+    "react-native": "^0.3.1",
+    "react-native-button": "^1.0.0"
   }
 }

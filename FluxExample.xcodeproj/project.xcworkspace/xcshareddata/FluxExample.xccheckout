@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DFF070A8-6253-4145-BB66-C360F1D5BE7C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FluxExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>75ECB171D8AC76307FA38FE24762734077ADD0C8</key>
+		<string>github.com:przeor/React-Native-example-FLUX-starter-kit-for-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FluxExample.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>75ECB171D8AC76307FA38FE24762734077ADD0C8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:przeor/React-Native-example-FLUX-starter-kit-for-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>75ECB171D8AC76307FA38FE24762734077ADD0C8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>75ECB171D8AC76307FA38FE24762734077ADD0C8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>React-Native-example-FLUX-starter-kit-for-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
