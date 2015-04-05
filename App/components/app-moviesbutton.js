@@ -1,8 +1,8 @@
 'use strict';
 
 var React = require('react-native');
-// var EntityActions = require('../actions/app-entity');
-var EntityStore = require('../stores/app-entity');
+var MoviesActions = require('../actions/app-movies');
+var MoviesStore = require('../stores/app-movies');
 var Button = require('react-native-button');
 
 var {
@@ -13,7 +13,7 @@ var {
   TouchableHighlight,
 } = React;
 
-var EntityButton = React.createClass({
+var MoviesButton = React.createClass({
   render: function() { 
     return ( 
       <Button style={{color: 'green'}} onPress={this._handlePress}>
@@ -36,4 +36,4 @@ var styles = StyleSheet.create({
 });
 
 
-module.exports = EntityButton;
+module.exports = MoviesButton;

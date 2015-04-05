@@ -6,21 +6,21 @@ var EventEmitter = require('events').EventEmitter;
 var CHANGE_EVENT = "change";
 
 
-var _entityList = [
+var _moviesList = [
     // your state container where 
 ];
 
 
 
-function _persistEntityData(response) {
-	console.log("Entity gets async data from web api stores /app-entity.js");
-  _entityList = response;
+function _persistMoviesData(response) {
+	console.log("Movies gets async data from web api stores /app-movies.js");
+  _moviesList = response;
     // do whatever you need to do with the response to store
     // the state
 }
 
 
-var EntityStore = merge(EventEmitter.prototype, {
+var MoviesStore = merge(EventEmitter.prototype, {
   emitChange:function(){
     this.emit(CHANGE_EVENT);
   },
@@ -33,21 +33,21 @@ var EntityStore = merge(EventEmitter.prototype, {
     this.removeListener(CHANGE_EVENT, callback)
   },
   getState: function() {
-    return _entityList;
+    return _moviesList;
   },
   dispatcherIndex:AppDispatcher.register(function(payload){
     var action = payload.action; // this is our action from handleViewAction
     switch(action.actionType) {
         case AppConstants.GET_ENTITY_DATA:
-            _persistEntityData(action.response);
+            _persistMoviesData(action.response);
             break;
         default:
             return true;
     }
-    EntityStore.emitChange();
+    MoviesStore.emitChange();
 
     return true;
   })
 })
 
-module.exports = EntityStore;
+module.exports = MoviesStore;

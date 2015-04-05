@@ -1,7 +1,7 @@
 'use strict';
 
 var React = require('react-native');
-var EntityButton = require('./app-entitybutton');
+var MoviesButton = require('./app-moviesbutton');
 
 var {
   StyleSheet,
@@ -15,7 +15,7 @@ var FluxWidget = React.createClass({
   render: function() { 
     return ( 
       <View stlye={styles.fluxwidget}>
-        <EntityButton />
+        <MoviesButton />
       </View>
     );
 
