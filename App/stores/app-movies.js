@@ -12,11 +12,15 @@ var _moviesList = [
 
 
 
-function _persistMoviesData(response) {
+function _persistMoviesData(payload) {
 	console.log("Movies gets async data from web api stores /app-movies.js");
-  _moviesList = response;
+  _moviesList = payload.response;
     // do whatever you need to do with the response to store
     // the state
+}
+
+function _movieButtonPressed(payload) {
+  console.log('from movies store - Pressed!');
 }
 
 
@@ -36,13 +40,15 @@ var MoviesStore = merge(EventEmitter.prototype, {
     return _moviesList;
   },
   dispatcherIndex:AppDispatcher.register(function(payload){
-    var action = payload.action; // this is our action from handleViewAction
-    switch(action.actionType) {
-        case AppConstants.GET_ENTITY_DATA:
-            _persistMoviesData(action.response);
-            break;
-        default:
-            return true;
+    switch(payload.actionType) {
+      case AppConstants.GET_MOVIES_DATA:
+        _persistMoviesData(payload);
+        break;
+      case AppConstants.MOVIES_BUTTON_PRESSED:
+        _movieButtonPressed(payload);
+        break;
+      default:
+        return true;
     }
     MoviesStore.emitChange();
 

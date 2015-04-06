@@ -24,6 +24,9 @@ var MoviesButton = React.createClass({
   },
   _handlePress(event) {
     console.log('Pressed!');
+    // this button is triggering function
+    // in movies stores called _movieButtonPressed
+    MoviesActions.pressMoviesButton();
   },
 });
 
