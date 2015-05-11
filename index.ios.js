@@ -58,8 +58,8 @@ var FluxExample = React.createClass({
         dataSource: this.state.dataSource.cloneWithRows(MOCKED_MOVIES_DATA), 
         loaded: true, 
       });
-    }) 
-    .done(); 
+    });
+    // .done(); 
   },
   render: function() { 
     if(this.state.error) {
